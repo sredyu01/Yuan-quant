@@ -5,7 +5,7 @@
 
 低交易频率 + 高胜率 + 风险控制
 
-### 26.3.12 更新 创建 yzh 分支
+### 26.3.12 更新 yzh 分支init
 主体策略：AO指标 + MTF多维时间框架
 
 TODO：
@@ -18,3 +18,4 @@ AO文献: https://cn.tradingview.com/support/solutions/43000501826/
  - 固定收益值止盈回测
  - 收益百分比
  - 动态止盈
+
