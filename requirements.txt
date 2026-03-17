@@ -1,0 +1,16 @@
+# Yuan-Quant 依赖包
+# 安装：pip install -r requirements.txt
+
+# MT5 接口
+MetaTrader5>=5.0.45
+
+# 数据处理
+numpy>=1.23.0
+pandas>=1.5.0
+
+# 可视化
+matplotlib>=3.6.0
+
+# 工具
+python-dateutil>=2.8.2
+pytz>=2022.7

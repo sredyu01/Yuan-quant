@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# 日志
+logs/*.log
+logs/*.log.*
+
+# 回测结果图片
+results/*.png
+results/*.jpg
+results/*.html
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 敏感配置（如有本地覆盖文件）
+config/local_settings.py
