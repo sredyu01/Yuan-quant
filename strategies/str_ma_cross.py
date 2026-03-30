@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-算法模块 - 均线交叉策略 (strategies/ma_cross.py)
+算法模块 - 均线交叉策略 (strategies/str_ma_cross.py)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 【策略说明】
   时间框架：H1（1小时）
@@ -22,6 +22,10 @@
   magic     : 魔术数字
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 """
+
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import time
 from config.strategy_config import MA_CROSS_CONFIG

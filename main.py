@@ -19,7 +19,7 @@
 
 import argparse
 from utils.logger import get_logger
-
+ 
 logger = get_logger("main")
 
 
@@ -68,7 +68,7 @@ def parse_args():
 def run_live(strategy: str, symbol: str = None, timeframe: str = None):
     """启动实盘策略。"""
     if strategy == "ma_cross":
-        from strategies.ma_cross import MACrossStrategy
+        from strategies.str_ma_cross import MACrossStrategy
         from config import MA_CROSS_CONFIG
         cfg = MA_CROSS_CONFIG.copy()
         if symbol:    cfg["symbol"]    = symbol
@@ -77,7 +77,7 @@ def run_live(strategy: str, symbol: str = None, timeframe: str = None):
         MACrossStrategy(cfg).run()
 
     elif strategy == "ao_mtf":
-        from strategies.ao_mtf import AOMTFStrategy
+        from strategies.str_ao_mtf import AOMTFStrategy
         from config import AO_MTF_CONFIG
         cfg = AO_MTF_CONFIG.copy()
         if symbol: cfg["symbol"] = symbol

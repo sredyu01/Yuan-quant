@@ -3,6 +3,11 @@
 回测模块 - AO MTF 策略回测 (backtest/run_ao_mtf.py)
 """
 
+import sys
+import os
+# 将项目根目录加入 sys.path，确保无论从哪个目录运行都能正确导入模块
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import pandas as pd
 from connector import MT5Client
 from indicators import calculate_ao, ao_color
